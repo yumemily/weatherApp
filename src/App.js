@@ -44,7 +44,7 @@ class App extends React.Component {
     render() {
       const { isLoading, locationName, temperature, description } = this.state;
       if (isLoading) {
-        return <p>Loading...</p>
+        return (<p>Loading...</p>)
       }
       return (
         <div className="container-fluid text-white my-auto">
