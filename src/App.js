@@ -1,6 +1,6 @@
 import React from 'react'; //import useEffect
 import './App.css';
-import AwesomeComponent from './components/AwesomeComponent';
+
 
 class App extends React.Component {
   constructor(props) {
@@ -44,7 +44,7 @@ class App extends React.Component {
     render() {
       const { isLoading, locationName, temperature, description } = this.state;
       if (isLoading) {
-        return <AwesomeComponent />
+        return <p>Loading...</p>
       }
       return (
         <div className="container-fluid text-white my-auto">
