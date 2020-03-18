@@ -43,7 +43,7 @@ class App extends React.Component {
 
     render() {
       const { isLoading, locationName, temperature, description } = this.state;
-      if (isLoading) {
+      if (isLoading===true) {
         return (<p>Loading...</p>)
       }
       return (
