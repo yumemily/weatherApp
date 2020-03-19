@@ -18,6 +18,7 @@ class App extends React.Component {
   currentWeather = async (lat, lon) => {
     try {
       let url = (`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${process.env.REACT_APP_APIKEY}&units=metric`)
+      //console.log(api)
       let data = await fetch(url)
       let result = await data.json();
       if (result.cod * 1 === 200) {
