@@ -1,8 +1,8 @@
 import React from 'react'; //import useEffect
 import './App.css';
 
-
-let api = process.env.REACT_APP_APIKEY
+let api ='http://openweathermap.org/faq#error401'
+//let api = process.env.REACT_APP_APIKEY
 class App extends React.Component {
   constructor(props) {
     super(props)
